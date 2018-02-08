@@ -1,0 +1,167 @@
+header.topbar
+  nav.navbar.top-navbar.navbar-expand-md.navbar-light
+    // ==============================================================
+    // Logo
+    // ==============================================================
+    .navbar-header
+      a.navbar-brand(href='index.html')
+        // Logo icon
+        b
+          // You can put here icon as well // <i class="wi wi-sunset"></i> //
+          // Dark Logo icon
+          img.dark-logo(src='./assets/images/logo-icon.png', alt='homepage')
+          // Light Logo icon
+          img.light-logo(src='./assets/images/logo-light-icon.png', alt='homepage')
+        // End Logo icon
+        // Logo text
+        span
+          // dark Logo text
+          img.dark-logo(src='./assets/images/logo-text.png', alt='homepage')
+          // Light Logo text
+          img.light-logo(src='./assets/images/logo-light-text.png', alt='homepage')
+    // ==============================================================
+    // End Logo
+    // ==============================================================
+    .navbar-collapse
+      // ==============================================================
+      // toggle and nav items
+      // ==============================================================
+      ul.navbar-nav.mr-auto
+        // This is
+        li.nav-item
+          a.nav-link.nav-toggler.hidden-md-up.waves-effect.waves-dark(href='javascript:void(0)')
+            i.ti-menu
+        li.nav-item
+          a.nav-link.sidebartoggler.hidden-sm-down.waves-effect.waves-dark(href='javascript:void(0)')
+            i.ti-menu
+        li.nav-item.hidden-sm-down
+      // ==============================================================
+      // User profile and search
+      // ==============================================================
+      ul.navbar-nav.my-lg-0
+        // ==============================================================
+        // Search
+        // ==============================================================
+        li.nav-item.hidden-xs-down.search-box
+          a.nav-link.hidden-sm-down.waves-effect.waves-dark(href='javascript:void(0)')
+            i.ti-search
+          form.app-search
+            input.form-control(type='text', placeholder='Search & enter')
+            a.srh-btn
+              i.ti-close
+        // ==============================================================
+        // Messages
+        // ==============================================================
+        li.nav-item.dropdown
+          a#2.nav-link.dropdown-toggle.waves-effect.waves-dark(href='', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.mdi.mdi-email
+            .notify
+              span.heartbit
+              span.point
+          .dropdown-menu.mailbox.dropdown-menu-right.animated.flipInY(aria-labelledby='2')
+            ul
+              li
+                .drop-title You have 4 new messages
+              li
+                .message-center
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='./assets/images/users/1.jpg', alt='user')
+                      span.profile-status.online.pull-right
+                    .mail-contnet
+                      h5 Pavan kumar
+                      span.mail-desc Just see the my admin!
+                      span.time 9:30 AM
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='./assets/images/users/2.jpg', alt='user')
+                      span.profile-status.busy.pull-right
+                    .mail-contnet
+                      h5 Sonu Nigam
+                      span.mail-desc I've sung a song! See you at
+                      span.time 9:10 AM
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='./assets/images/users/3.jpg', alt='user')
+                      span.profile-status.away.pull-right
+                    .mail-contnet
+                      h5 Arijit Sinh
+                      span.mail-desc I am a singer!
+                      span.time 9:08 AM
+                  // Message
+                  a(href='#')
+                    .user-img
+                      img.img-circle(src='./assets/images/users/4.jpg', alt='user')
+                      span.profile-status.offline.pull-right
+                    .mail-contnet
+                      h5 Pavan kumar
+                      span.mail-desc Just see the my admin!
+                      span.time 9:02 AM
+              li
+                a.nav-link.text-center(href='javascript:void(0);')
+                  strong See all e-Mails
+                  i.fa.fa-angle-right
+        // ==============================================================
+        // End Messages
+        // ==============================================================
+        // ==============================================================
+        // Language
+        // ==============================================================
+        //li.nav-item.dropdown
+          a.nav-link.dropdown-toggle.waves-effect.waves-dark(href='', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            i.flag-icon.flag-icon-us
+          .dropdown-menu.dropdown-menu-right.animated.bounceInDown
+            a.dropdown-item(href='#')
+              i.flag-icon.flag-icon-in
+              |  India
+            a.dropdown-item(href='#')
+              i.flag-icon.flag-icon-fr
+              |  French
+            a.dropdown-item(href='#')
+              i.flag-icon.flag-icon-cn
+              |  China
+            a.dropdown-item(href='#')
+              i.flag-icon.flag-icon-de
+              |  Dutch
+        // ==============================================================
+        // Profile
+        // ==============================================================
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle.waves-effect.waves-dark(href='', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.profile-pic(src='./assets/images/users/1.jpg', alt='user')
+          .dropdown-menu.dropdown-menu-right.animated.flipInY
+            ul.dropdown-user
+              li
+                .dw-user-box
+                  .u-img
+                    img(src='./assets/images/users/1.jpg', alt='user')
+                  .u-text
+                    h4 Steve Jobs
+                    p.text-muted varun@gmail.com
+                    a.btn.btn-rounded.btn-danger.btn-sm(href='pages-profile.html') View Profile
+              li.divider(role='separator')
+              li
+                a(href='#')
+                  i.ti-user
+                  |  My Profile
+              li
+                a(href='#')
+                  i.ti-wallet
+                  |  My Balance
+              li
+                a(href='#')
+                  i.ti-email
+                  |  Inbox
+              li.divider(role='separator')
+              li
+                a(href='#')
+                  i.ti-settings
+                  |  Account Setting
+              li.divider(role='separator')
+              li
+                a(href='#')
+                  i.fa.fa-power-off
+                  |  Logout

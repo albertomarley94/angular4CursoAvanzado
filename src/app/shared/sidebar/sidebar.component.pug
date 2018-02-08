@@ -1,0 +1,38 @@
+aside.left-sidebar
+  // Sidebar scroll
+  .scroll-sidebar
+    // Sidebar navigation
+    nav.sidebar-nav
+      ul#sidebarnav
+        li.user-profile
+          a.has-arrow.waves-effect.waves-dark(href='#', aria-expanded='false')
+            img(src='./assets/images/users/profile.png', alt='user')
+            span.hide-menu Steave Jobs 
+          ul.collapse(aria-expanded='false')
+            li
+              a(href='javascript:void()') My Profile 
+            li
+              a(href='javascript:void()') My Balance
+            li
+              a(href='javascript:void()') Inbox
+            li
+              a(href='javascript:void()') Account Setting
+            li
+              a(href='javascript:void()') Logout
+        li.nav-devider
+        li.nav-small-cap PERSONAL
+        li
+          a.has-arrow.waves-effect.waves-dark(href='#', aria-expanded='false')
+            i.mdi.mdi-gauge
+            span.hide-menu
+              | Dashboard 
+              span.label.label-rouded.label-themecolor.pull-right 4
+          ul.collapse(aria-expanded='false')
+            li
+              a(href='index.html') Minimal 
+            li
+              a(href='index2.html') Analytical
+            li
+              a(href='index3.html') Demographical
+            li
+              a(href='index4.html') Modern
