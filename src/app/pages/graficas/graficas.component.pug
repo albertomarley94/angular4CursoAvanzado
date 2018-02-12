@@ -1,0 +1,10 @@
+.row
+    .col-6('*ngFor'="let grafico of graficos")
+        .card
+            .card-body
+                app-grafica-donut(
+                    '[labels]'="grafico.labels" 
+                    '[data]'="grafico.data" 
+                    '[type]'="grafico.type" 
+                    '[leyenda]'="grafico.leyenda"
+                )

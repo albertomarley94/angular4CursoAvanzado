@@ -1,0 +1,33 @@
+.row
+    .col-12
+        .card
+            .card-body
+                h3.card-title Progress Bar
+                    .progress
+                        .progress-bar.progress-bar-striped.progress-bar-animated(role='progressbar', '[attr.ariaValuenow]' ='porcent', aria-valuemin='0', aria-valuemax='100', '[style.width]'="porcent + '%'")
+        .card
+            .card-body
+                h3.card-title Progress Bar
+                    .progress   
+                        .progress-bar.progress-bar-striped.progress-bar-animated.bg-success(role='progressbar', '[attr.ariaValuenow]' ='porcent2', aria-valuemin='0', aria-valuemax='100', '[style.width]'="porcent2 + '%'")
+
+.row
+    .col-6
+        .card
+            .card-body
+                app-incrementador(
+                    '[title]'="'Prueba 1'" 
+                    '[porcent]'="porcent"
+                    '(onChange)'="porcent = $event" 
+                    )    
+                    //-'(onChange)'="onChange($event, 'test1')"
+                            
+    .col-6
+        .card
+            .card-body
+                app-incrementador(
+                    '[title]'="'Prueba 2'" 
+                    '[porcent]'="porcent2" 
+                    '(onChange)'="porcent2 = $event"
+                    )   
+                    //-'(onChange)'="onChange($event, 'test2')"

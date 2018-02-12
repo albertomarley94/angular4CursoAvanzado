@@ -1,0 +1,8 @@
+h3 {{leyenda}}
+div('*ngIf'="doughnutChartData")
+    canvas(baseChart="" 
+        '[data]'='doughnutChartData' 
+        '[labels]'='doughnutChartLabels' 
+        '[chartType]'='doughnutChartType' 
+        '(chartHover)'='chartHovered($event)' 
+        '(chartClick)'='chartClicked($event)')
