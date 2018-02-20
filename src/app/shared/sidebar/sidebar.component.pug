@@ -16,23 +16,16 @@ aside.left-sidebar
             li
               a(href='javascript:void()') Inbox
             li
-              a(href='javascript:void()') Account Setting
+              a(href='#/account-settings') Account Setting
             li
               a(href='javascript:void()') Logout
         li.nav-devider
         li.nav-small-cap PERSONAL
-        li
+        li('*ngFor'="let option of menu")
           a.has-arrow.waves-effect.waves-dark(href='#', aria-expanded='false')
-            i.mdi.mdi-gauge
-            span.hide-menu
-              | Dashboard 
+            i(class="{{option.icon}}")
+            span.hide-menu {{option.title}}
               span.label.label-rouded.label-themecolor.pull-right 4
           ul.collapse(aria-expanded='false')
-            li
-              a(href='index.html') Minimal 
-            li
-              a(href='index2.html') Analytical
-            li
-              a(href='index3.html') Demographical
-            li
-              a(href='index4.html') Modern
+            li('*ngFor'="let suboption of option.subitems")
+              a('[routerLink]' ="[suboption.url]") {{suboption.title}} 

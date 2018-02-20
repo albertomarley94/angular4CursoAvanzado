@@ -5,7 +5,7 @@
 section#wrapper.login-register.login-sidebar(style='background-image:url(./assets/images/background/login-register.jpg);')
   .login-box.card
     .card-body
-      form#loginform.form-horizontal.form-material(action='index.html')
+      form#loginform.form-horizontal.form-material(action='index.html' '(ngSubmit)'="goHome()")
         a.text-center.db(href='javascript:void(0)')
           img(src='./assets/images/logo-icon.png', alt='Home')
           br
