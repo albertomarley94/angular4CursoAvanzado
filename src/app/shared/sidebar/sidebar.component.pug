@@ -25,7 +25,7 @@ aside.left-sidebar
           a.has-arrow.waves-effect.waves-dark(href='#', aria-expanded='false')
             i(class="{{option.icon}}")
             span.hide-menu {{option.title}}
-              span.label.label-rouded.label-themecolor.pull-right 4
+              span.label.label-rouded.label-themecolor.pull-right {{option.subitems.length}}
           ul.collapse(aria-expanded='false')
             li('*ngFor'="let suboption of option.subitems")
-              a('[routerLink]' ="[suboption.url]") {{suboption.title}} 
+              a('[routerLink]' ="[suboption.url]" 'routerLinkActive'="active") {{suboption.title}} 

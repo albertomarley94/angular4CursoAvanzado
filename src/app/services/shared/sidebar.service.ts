@@ -9,7 +9,7 @@ export class SidebarService {
       subitems:[
         {
           title: "Home",
-          url: "/"
+          url: "/dashboard"
         },
         {
           title: "Graficas",
@@ -22,6 +22,14 @@ export class SidebarService {
         {
           title: "Settings",
           url: "/account-settings"
+        },
+        {
+          title: "Promesas",
+          url: "/promesas"
+        },
+        {
+          title: "Rxjs",
+          url: "/rxjs"
         }
       ]
     }]

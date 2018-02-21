@@ -13,6 +13,8 @@ import { IncrementadorComponent } from '../commons/incrementador/incrementador.c
 import { GraficasComponent } from './graficas/graficas.component';
 import { GraficaDonutComponent } from '../commons/grafica-donut/grafica-donut.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [     
@@ -22,7 +24,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         IncrementadorComponent,
         GraficasComponent,
         GraficaDonutComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports: [ 
         BrowserModule,
